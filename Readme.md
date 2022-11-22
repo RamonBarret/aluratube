@@ -7,7 +7,7 @@ Site desenvolvido como resultado dos aprendizados obtidos na Imersão React - Al
 ## Tecnologias 🛠
 
 - [JavaScript](https://www.javascript.org/)
-- [NextJS] (https://nextjs.org/)
+- NextJS
   
 ## 🔖 Layout
 
