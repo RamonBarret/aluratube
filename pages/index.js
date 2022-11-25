@@ -67,7 +67,7 @@ const Header = (props) =>{
       {/* <img src={config.cover} className="banner"></img> */}
       <StyledBanner />
       <section className="user-info">
-        <img src={`https://github.com/${config.github}.png`}></img>
+        <img className="foto-perfil" src={`https://github.com/${config.github}.png`} alt="foto de perfil"/>
         <div>
           <h2>{config.name}</h2>
           <p>{config.job}</p>
@@ -79,12 +79,12 @@ const Header = (props) =>{
 
 const Timeline = ({ searchValue, ...props }) => {
   
-  const playlistNames = Object.keys(props.playlists);
+  const playlistName = Object.keys(props.playlists);
   const favoritosName = Object.keys(props.favoritos);
 
   return (
     <StyledTimeline>
-      {playlistNames.map((playlistName) => {
+      {playlistName.map((playlistName) => {
         const videos = props.playlists[playlistName];
       
         return (
