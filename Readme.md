@@ -25,8 +25,8 @@ Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
 
 ## Instrutores 👨🏽‍🏫
 
-[Instrutores] Nayanne Lopes
-[Instrutores] Mario Souto (DevSoutinho)
-[Instrutores] Paulo Silveira
+- Nayanne Lopes
+- Mario Souto (DevSoutinho)
+- Paulo Silveira
 
 
