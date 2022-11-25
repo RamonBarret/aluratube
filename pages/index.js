@@ -65,7 +65,8 @@ const StyledBanner = styled.div`
   background-size: cover;
   background-position: center;
 `;
-function Header() {
+
+const Header = (props) =>{
   return (
     <StyledHeader>
       {/* <img src={config.cover} className="banner"></img> */}
@@ -81,9 +82,10 @@ function Header() {
   );
 }
 
-function Timeline({ searchValue, ...props }) {
+const Timeline = ({ searchValue, ...props }) => {
   
   const playlistNames = Object.keys(props.playlists);
+  const favoritosName = Object.keys(props.favoritos);
 
   return (
     <StyledTimeline>
@@ -112,6 +114,24 @@ function Timeline({ searchValue, ...props }) {
           </section>
         );
       })}
+      {favoritosName.map((favoritosName) => {
+                const favoriteInfluences = props.favoritos[favoritosName]
+                return (
+                    <section key={favoritosName}>
+                        <h2>{favoritosName}</h2>
+                        <div className="favorite-card">
+                            {favoriteInfluences.map((favoriteInfluences) => {
+                                return (
+                                    <a key={favoriteInfluences.perfilgithub} href={`https://github.com/${favoriteInfluences.perfilgithub}`}>
+                                        <img className="photo-alurafavoritos" src={`https://github.com/${favoriteInfluences.perfilgithub}.png`} />
+                                        <span>{`@${favoriteInfluences.perfilgithub}`}</span>
+                                    </a>
+                                )
+                            })}
+                        </div>
+                    </section>
+                )
+            })}
     </StyledTimeline>
   );
 }

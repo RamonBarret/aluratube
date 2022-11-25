@@ -45,4 +45,25 @@ export const StyledTimeline = styled.div`
       }
     }
   }
+
+  .video-card{   
+      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+      grid-auto-columns: minmax(200px,1fr);
+      span{ 
+        padding-right: 24px;
+      }
+    }
+    .favorite-card{
+      grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+      grid-auto-columns: minmax(100px,1fr);
+      .photo-alurafavoritos{
+        aspect-ratio: 0;
+        clip-path: circle();
+      }     
+      span {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
 `;
+
