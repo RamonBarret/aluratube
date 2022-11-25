@@ -10,9 +10,14 @@ Site desenvolvido como resultado dos aprendizados obtidos na Imersão React - Al
 
 - [x] Criação de uma réplica do Youtube - Aluratube
 
-## Preview
+## Preview - Light mode
 <p align="center">
-  <img alt="ImersãoReact Alura" src=".github/preview.png"> //screen da pg
+  <img alt="Light mode - screen" src=".github/preview.png"> //screen da pg
+</p>
+
+## Preview - Dark mode
+<p align="center">
+  <img alt="Dark mode - screen" src=".github/preview.png"> //screen da pg
 </p>
 
 ## Tecnologias 🛠
