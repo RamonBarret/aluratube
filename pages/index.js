@@ -3,28 +3,23 @@ import config from "../config.json";
 import styled from "styled-components";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+import { CSSReset } from "../src/components/CSSReset";
 
 function HomePage() {
   const mensagem = "Welcome!";
   const estilosDaHomePage = {
   };
-  let [valorFiltro, setValorFiltro] = React.useState("");
+  const [valorFiltro, setValorFiltro] = React.useState("");
 
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          flex: 1,
-        }}
-      >
+      
+      <CSSReset />
+      <div>
         {/* PropDrilling */}
         <Menu valorFiltro={valorFiltro} setValorFiltro={setValorFiltro} />
         <Header />
-        <Timeline searchValue={valorFiltro} playlists={config.playlists}>
-          Conteúdo
-        </Timeline>
+        <Timeline searchValue={valorFiltro} playlists={config.playlists} favoritos={config.favoritos}/>
       </div>
     </>
   );
