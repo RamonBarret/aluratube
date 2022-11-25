@@ -36,29 +36,31 @@
         }
       ]
     },
-    "favorites-cards": [
-      {
-        "github": "diego3g"
-      },
-      {
-        "github": "peas"
-      },
-      {
-        "github": "matheusbattisti"
-      },
-      {
-        "github": "omariosouto"
-      },
-      {
-        "github": "gabrielfroes"
-      },
-      {
-        "github": "vweberfroes"
-      },
-      {
-        "github": "rafaballerini"
-      }
-    ]
+    "favoritos":{
+      "Meus Favoritos": [
+        {
+          "github": "diego3g"
+        },
+        {
+          "github": "peas"
+        },
+        {
+          "github": "matheusbattisti"
+        },
+        {
+          "github": "omariosouto"
+        },
+        {
+          "github": "gabrielfroes"
+        },
+        {
+          "github": "vweberfroes"
+        },
+        {
+          "github": "rafaballerini"
+        }
+      ]
+    }
   }
   
 
