@@ -2,9 +2,8 @@
   <img alt="Aluratube" src=".github/logo.svg" />
 </p>
 
-## Projeto - Imersão React 👨🏽‍💻
+## Projeto - Imersão React Alura 👨🏽‍💻
 
-### Aluratube ⏮⏯⏭
 
 Site desenvolvido como resultado dos aprendizados obtidos na Imersão React - Alura, desenvolvendo o projeto Aluratube, uma réplica do youtube.
 
