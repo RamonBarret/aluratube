@@ -12,12 +12,12 @@ Site desenvolvido como resultado dos aprendizados obtidos na Imersão React - Al
 
 ## Preview - Light mode
 <p align="center">
-  <img alt="Light mode - screen" src=".github/preview.png"> //screen da pg
+  <img alt="Light mode - screen" src=".github/preview.png">
 </p>
 
 ## Preview - Dark mode
 <p align="center">
-  <img alt="Dark mode - screen" src=".github/preview_dark.png"> //screen da pg
+  <img alt="Dark mode - screen" src=".github/preview_dark.png">
 </p>
 
 ## Tecnologias 🛠
