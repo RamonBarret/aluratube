@@ -12,9 +12,7 @@ function HomePage() {
   const [valorFiltro, setValorFiltro] = React.useState("");
 
   return (
-    <>
-      
-      <CSSReset />
+    <>  
       <div>
         {/* PropDrilling */}
         <Menu valorFiltro={valorFiltro} setValorFiltro={setValorFiltro} />
@@ -61,7 +59,7 @@ const StyledBanner = styled.div`
   background-position: center;
 `;
 
-const Header = (props) =>{
+const Header = () =>{
   return (
     <StyledHeader>
       {/* <img src={config.cover} className="banner"></img> */}
@@ -110,23 +108,24 @@ const Timeline = ({ searchValue, ...props }) => {
         );
       })}
       {favoritosName.map((favoritosName) => {
-                const favoriteInfluences = props.favoritos[favoritosName]
+        const favoriteInfluences = props.favoritos[favoritosName]
+
+        return (
+          <section key={favoritosName}>
+            <h2>{favoritosName}</h2>
+            <div className="favorite-card">
+              {favoriteInfluences.map((favoriteInfluences) => {
                 return (
-                    <section key={favoritosName}>
-                        <h2>{favoritosName}</h2>
-                        <div className="favorite-card">
-                            {favoriteInfluences.map((favoriteInfluences) => {
-                                return (
-                                    <a key={favoriteInfluences.perfilgithub} href={`https://github.com/${favoriteInfluences.perfilgithub}`}>
-                                        <img className="photo-alurafavoritos" src={`https://github.com/${favoriteInfluences.perfilgithub}.png`} />
-                                        <span>{`@${favoriteInfluences.perfilgithub}`}</span>
-                                    </a>
-                                )
-                            })}
-                        </div>
-                    </section>
-                )
-            })}
+                  <a key={favoriteInfluences.perfilgithub} href={`https://github.com/${favoriteInfluences.perfilgithub}`}>
+                    <img className="photo-alurafavoritos" src={`https://github.com/${favoriteInfluences.perfilgithub}.png`} />
+                    <span>{`@${favoriteInfluences.perfilgithub}`}</span>
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })}
     </StyledTimeline>
   );
 }
